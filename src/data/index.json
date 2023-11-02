@@ -3,9 +3,9 @@
     {
       "id": "1",
       "src": "./img/product-chain-1.png",
-      "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    },
+      "title": "Frontend Development",
+      "description": "&lt;ul&gt;&lt;li&gt;HTML (Experienced)&lt;/li&gt;&lt;li&gt;CSS (Experienced)&lt;/li&gt;&lt;/ul&gt;"
+    },        
     {
       "id": "2",
       "src": "./img/tag-1.png",
@@ -30,7 +30,7 @@
       "id": "1",
       "src": "./img/placeholder-image.png",
       "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "",
       "link": "View In Github"
     },
     {

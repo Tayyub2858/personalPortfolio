@@ -356,8 +356,8 @@ h2 {
   width: 100%;
 }
 .portfolio--section--card {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
@@ -389,6 +389,24 @@ h2 {
 .portfolio--section--card:hover path {
   stroke: #006b6a;
 }
+.Demo-btn{
+  border: 1px solid #006b6a;
+  text-decoration: none;
+  padding: 3% 10% 3% 10%;
+  margin-left: 20%;
+  border-radius: 10px;
+  color: black;
+}
+.Demo-btn:hover{
+  border: 1px solid #006b6a;
+  text-decoration: none;
+  padding: 3% 10% 3% 10%;
+  margin-left: 20%;
+  border-radius: 10px;
+  color: white;
+  background-color:#5e3bee ;
+}
+
 /* Portfolio Ends */
 
 /* Testimonial */

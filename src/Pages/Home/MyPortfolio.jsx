@@ -1,15 +1,15 @@
-import data from "../../data/index.json";
+import { Link } from "react-router-dom";
 
 export default function MyPortfolio() {
   return (
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <p className="sub--title">Recent My Work Demo</p>
+          <h2 className="section--heading">My Projects In Intership</h2>
         </div>
         <div>
-          <button className="btn btn-github">
+          <Link  to='https://github.com'  className="btn btn-github">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -25,24 +25,30 @@ export default function MyPortfolio() {
               />
             </svg>
             Visit My GitHub
-          </button>
+          </Link>
+
         </div>
-      </div>
+      </div> 
+      <p className="text-md" style={{fontSize:'20px'}}>Following projects showcases my skills and experience through real-wrok example of my work. <br />
+        Each project is briefly described with links to code repositories and live demos in it. <br />
+        it reflects my ability to slove complex problems, work with different technologies, <br /> and manage projects effectively.
+        </p>  
       <div className="portfolio--section--container">
-        {data?.portfolio?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
-            <div className="portfolio--section--img">
-              <img src={item.src} alt="Placeholder" />
+
+        <div className="portfolio--section--card">
+          <div className="portfolio--section--img">
+            <img src='./img/ecommerce.png' alt="Placeholder" />
+          </div>
+          <div className="portfolio--section--card--content">
+            <div>
+              <h3 className="portfolio--section--title">Ecommerce Marketplace</h3>
+              <p className="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique</p>
             </div>
-            <div className="portfolio--section--card--content">
-              <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
-                <p className="text-md">{item.description}</p>
-              </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
+            <div style={{ display: 'flex', width: '100%' }}>
+              <Link to='https://github.com' className="text-sm portfolio--link">
+                View In Github
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/2000/svg" f
                   width="16"
                   height="16"
                   viewBox="0 0 20 19"
@@ -56,10 +62,176 @@ export default function MyPortfolio() {
                     stroke-linejoin="round"
                   />
                 </svg>
-              </p>
+              </Link>
+              <Link to='https://ecom-marketplace.netlify.app' className="Demo-btn">Live Demo</Link>
             </div>
           </div>
-        ))}
+        </div>
+        <div className="portfolio--section--card">
+          <div className="portfolio--section--img">
+            <img src='./img/download.png' alt="Placeholder" style={{ height: "270px" }} />
+          </div>
+          <div className="portfolio--section--card--content">
+            <div>
+              <h3 className="portfolio--section--title">LERNING MANAGMENT SYSTEM</h3>
+              <p className="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique</p>
+            </div>
+            <div style={{ display: 'flex', width: '100%' }}>
+              <Link to='https://github.com/Tayyub2858/Brain-LMS' className="text-sm portfolio--link">
+                View In Github
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" f
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                >
+                  <path
+                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                    stroke="currentColor"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </Link>
+              <Link to='https://frabjous-cranachan-6def69.netlify.app' className="Demo-btn">Live Demo</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="portfolio--section--card">
+          <div className="portfolio--section--img">
+            <img src='./img/shoes.webp' alt="Placeholder" style={{ height: "270px" }} />
+          </div>
+          <div className="portfolio--section--card--content">
+            <div>
+              <h3 className="portfolio--section--title">Shoe APP</h3>
+              <p className="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique</p>
+            </div>
+            <div style={{ display: 'flex', width: '100%' }}>
+              <Link to='https://github.com' className="text-sm portfolio--link">
+                View In Github
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" f
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                >
+                  <path
+                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                    stroke="currentColor"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </Link>
+              <Link to='https://ecommerce-new-app.netlify.app' className="Demo-btn">Live Demo</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="portfolio--section--container">
+
+        <div className="portfolio--section--card">
+          <div className="portfolio--section--img">
+            <img src='./img/expence.jpg' alt="Placeholder" style={{ height: "270px" }} />
+          </div>
+          <div className="portfolio--section--card--content">
+            <div>
+              <h3 className="portfolio--section--title">Expence Tracker App</h3>
+              <p className="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique</p>
+            </div>
+            <div style={{ display: 'flex', width: '100%' }}>
+              <Link to='https://github.com/Tayyub2858/Expence-app' className="text-sm portfolio--link">
+                View In Github
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" f
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                >
+                  <path
+                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                    stroke="currentColor"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </Link>
+              <Link to='https://majestic-otter-0df856.netlify.app' className="Demo-btn">Live Demo</Link>
+            </div>
+          </div>
+        </div>
+        
+        <div className="portfolio--section--card">
+          <div className="portfolio--section--img">
+            <img src='./img/Quiz-App-01.png' alt="Placeholder" style={{ height: "270px" }} />
+          </div>
+          <div className="portfolio--section--card--content">
+            <div>
+              <h3 className="portfolio--section--title">Quiz App</h3>
+              <p className="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique</p>
+            </div>
+            <div style={{ display: 'flex', width: '100%' }}>
+              <Link to='https://github.com/Tayyub2858/Quiz-app' className="text-sm portfolio--link">
+                View In Github
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" f
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                >
+                  <path
+                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                    stroke="currentColor"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </Link>
+              <Link to='https://glistening-cheesecake-746b8f.netlify.app' className="Demo-btn">Live Demo</Link>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio--section--card">
+          <div className="portfolio--section--img">
+            <img src='./img/figma.png' alt="Placeholder" style={{ height: "270px" }} />
+          </div>
+          <div className="portfolio--section--card--content">
+            <div>
+              <h3 className="portfolio--section--title">Figma to React</h3>
+              <p className="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique</p>
+            </div>
+            <div style={{ display: 'flex', width: '100%' }}>
+              <Link to='https://github.com/Tayyub2858/figma-to-react' className="text-sm portfolio--link">
+                View In Github
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" f
+                  width="16"
+                  height="16"
+                  viewBox="0 0 20 19"
+                  fill="none"
+                >
+                  <path
+                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                    stroke="currentColor"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </Link>
+              <Link to='https://phenomenal-figolla-d190fa.netlify.app' className="Demo-btn">Live Demo</Link>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
